@@ -1,11 +1,14 @@
+import { Routes, Route } from "react-router-dom";
+
 import CargoPage from "./ui/pages/CargoPage";
+import HomePage from "./ui/pages/HomePage";
 
 function App() {
-  // We will add react-router
   return (
-    <>
-      <CargoPage />
-    </>
+    <Routes>
+      <Route path="/" element={<HomePage />} />
+      <Route path="/cargo" element={<CargoPage />} />
+    </Routes>
   );
 }
 

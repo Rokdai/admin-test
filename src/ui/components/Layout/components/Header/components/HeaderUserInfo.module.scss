@@ -1,0 +1,30 @@
+@import "../../../../../../assets/styles/services";
+
+.root {
+  display: grid;
+  grid-template-columns: repeat(3, max-content);
+  grid-column-gap: 26px;
+  align-items: center;
+}
+
+.role {
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.button {
+  width: 52px;
+  height: 52px;
+
+  background-color: $grey-light-l;
+
+  border-radius: 50%;
+
+  color: $white;
+
+  text-transform: uppercase;
+
+  &:hover {
+    background-color: $grey-x;
+  }
+}

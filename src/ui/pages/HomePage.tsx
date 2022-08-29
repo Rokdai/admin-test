@@ -1,12 +1,12 @@
 import { FC } from "react";
 import Layout from "../components/Layout/Layout";
 
-const CargoPage: FC = () => {
+const HomePage: FC = () => {
   return (
     <Layout>
-      <p>Cargo Page</p>
+      <p>Home Page</p>
     </Layout>
   );
 };
 
-export default CargoPage;
+export default HomePage;

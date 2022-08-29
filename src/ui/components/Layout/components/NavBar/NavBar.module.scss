@@ -1,0 +1,89 @@
+@import "../../../../../assets/styles/services";
+
+.root {
+  display: grid;
+  grid-template-rows: repeat(auto-fit, minmax(10px, max-content));
+  justify-items: center;
+  grid-row-gap: 30px;
+
+  padding: 34px 0;
+
+  background-color: $white;
+
+  box-shadow: 0px 5px 18px rgba(40, 41, 61, 0.07);
+}
+
+.navHeader {
+  display: grid;
+  grid-template-rows: repeat(auto-fit, minmax(10px, max-content));
+  justify-items: center;
+  grid-row-gap: 30px;
+
+  width: 100%;
+
+  padding: 0 30px;
+}
+
+.logo {
+  max-width: 85px;
+  width: 100%;
+}
+
+.nav {
+  display: grid;
+  grid-template-rows: repeat(auto-fit, minmax(10px, max-content));
+  grid-row-gap: 30px;
+
+  width: 100%;
+
+  padding: 0 10px;
+}
+
+.navPart {
+  position: relative;
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    bottom: -15px;
+
+    width: 100%;
+    height: 3px;
+
+    background-image: url("../../../../../assets/icon/nav_line.svg");
+  }
+
+  &:last-child::after {
+    display: none;
+  }
+}
+
+.navLink {
+  display: grid;
+  grid-template-columns: 24px 1fr;
+  grid-column-gap: 20px;
+  align-items: center;
+
+  max-width: 250px;
+  width: 100%;
+
+  padding: 16px 24px;
+
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 18px;
+
+  text-transform: uppercase;
+
+  &:hover {
+    background-color: $grey;
+
+    border-radius: 10px;
+  }
+}
+
+.linkImg {
+  width: 24px;
+  height: 24px;
+}

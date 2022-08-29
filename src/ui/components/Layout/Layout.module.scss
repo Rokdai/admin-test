@@ -1,0 +1,21 @@
+@import "../../../assets/styles/services";
+
+.root {
+  display: grid;
+  grid-template-columns: 270px 1fr;
+
+  height: 100%;
+
+  background-color: $grey-light-s;
+}
+
+.contentWrapper {
+  display: flex;
+  flex-direction: column;
+
+  padding: 0 51px 0 30px;
+}
+
+.main {
+  flex-grow: 1;
+}

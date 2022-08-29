@@ -1,0 +1,15 @@
+@import "../../../assets/styles/services";
+
+.root {
+  width: 100%;
+  height: 52px;
+
+  padding: 16px 20px;
+
+  background-color: $grey-light-x;
+  border: none;
+  border-radius: 8px;
+
+  font-size: 13px;
+  line-height: 18px;
+}
