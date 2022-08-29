@@ -1,0 +1,14 @@
+@import "./fonts/fonts.scss";
+
+html {
+  font-family: "Nunito, Sans-serif";
+}
+
+body {
+  max-width: 1920px;
+  width: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
