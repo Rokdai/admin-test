@@ -3,12 +3,12 @@ import { FC } from "react";
 import { ReactComponent as Logo } from "../../../../../assets/icon/logo.svg";
 import { ReactComponent as Plus } from "../../../../../assets/icon/plus.svg";
 import Button from "../../../../elements/Button/Button";
-import { Link } from "react-router-dom";
 
 import { menuItems } from "../../../../../variables/navBarMenu/navBarMenu";
 
 import styles from "./NavBar.module.scss";
 import { EMenuItemRenderTypes } from "../../../../../types/menuItem/menuItem";
+import CustomLink from "../../../../elements/CustomLink/CustomLink";
 
 const NavBar: FC = () => {
   return (
@@ -25,10 +25,12 @@ const NavBar: FC = () => {
             if (render === EMenuItemRenderTypes.PRODUCTS) {
               return (
                 <li key={id}>
-                  <Link to={href} className={styles.navLink}>
-                    <Icon className={styles.linkImg} />
-                    {label}
-                  </Link>
+                  <CustomLink path={href} className={styles.navLink}>
+                    <>
+                      <Icon className={styles.linkImg} />
+                      {label}
+                    </>
+                  </CustomLink>
                 </li>
               );
             }
@@ -39,10 +41,12 @@ const NavBar: FC = () => {
             if (render === EMenuItemRenderTypes.ALL) {
               return (
                 <li key={id}>
-                  <Link to={href} className={styles.navLink}>
-                    <Icon className={styles.linkImg} />
-                    {label}
-                  </Link>
+                  <CustomLink path={href} className={styles.navLink}>
+                    <>
+                      <Icon className={styles.linkImg} />
+                      {label}
+                    </>
+                  </CustomLink>
                 </li>
               );
             }
@@ -53,10 +57,12 @@ const NavBar: FC = () => {
             if (render === EMenuItemRenderTypes.OTHER) {
               return (
                 <li key={id}>
-                  <Link to={href} className={styles.navLink}>
-                    <Icon className={styles.linkImg} />
-                    {label}
-                  </Link>
+                  <CustomLink path={href} className={styles.navLink}>
+                    <>
+                      <Icon className={styles.linkImg} />
+                      {label}
+                    </>
+                  </CustomLink>
                 </li>
               );
             }
